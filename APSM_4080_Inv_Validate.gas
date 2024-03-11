@@ -1,0 +1,30 @@
+Program.Sub.ScreenSU.Start
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+' 9/23/08  JSO
+' Hooks 10170 (save button)
+
+
+Function.intrinsic.control.if(Variable.Caller.Switches,=,"N")
+	Function.Intrinsic.Control.If(Variable.Passed.000011,=,"")
+		Function.Intrinsic.UI.Msgbox("Product Line is required")
+		Variable.Passed.777777.Set(1)
+	Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndIf
+
+
+
+
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$0$}$APSM_4080_Inv_Validate$}$SKT$}$5/23/2016
+${$1$}$$}$$}$0$}$10170$}$INS010B-SAVE-BUTN-HOOK$}$5/23/2016 1:30:07 PM$}$(Program: INVMAIN; Screen: INS010B)
+
+Program.Sub.Comments.End
+
